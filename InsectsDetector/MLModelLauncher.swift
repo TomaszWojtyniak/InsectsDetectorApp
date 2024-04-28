@@ -12,7 +12,7 @@ class CoreMLLauncher {
     
     func testModel() {
         do {
-            let model = try mobilenet()
+            let model = try InsectsClassifierModel()
             let text = try model.prediction(input_1: getImageFromLocalPath(path: "InsectsDetector/test/ant/20230517_11-06-52-585272_29_crop_jpg.rf.c22fd764e2126d69fb6991ff67c301b1.jpg")!)
             print(text)
         } catch {
