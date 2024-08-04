@@ -21,7 +21,7 @@ class ImagePredictor {
 
 
         // Create an instance of the image classifier's wrapper class.
-        let imageClassifierWrapper = try? InsectsClassifierModel(configuration: defaultConfig)
+        let imageClassifierWrapper = try? InsectsDetectorModel(configuration: defaultConfig)
 
 
         guard let imageClassifier = imageClassifierWrapper else {

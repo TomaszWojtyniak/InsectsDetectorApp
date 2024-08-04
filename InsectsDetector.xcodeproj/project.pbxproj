@@ -20,6 +20,7 @@
 		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
 		8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */; };
+		8BE647732C5F93AF00619D12 /* InsectsDetectorModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8BE647722C5F93AF00619D12 /* InsectsDetectorModel.mlpackage */; };
 		8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92E62BDE72FF004D499A /* TabBar.swift */; };
 		8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92EA2BDE74D6004D499A /* AppScreen.swift */; };
 		8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */; };
@@ -60,6 +61,7 @@
 		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		8BE647722C5F93AF00619D12 /* InsectsDetectorModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = InsectsDetectorModel.mlpackage; sourceTree = "<group>"; };
 		8BFA92E62BDE72FF004D499A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		8BFA92EA2BDE74D6004D499A /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
 		8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStack.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		8BFA92E92BDE74AD004D499A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8BE647722C5F93AF00619D12 /* InsectsDetectorModel.mlpackage */,
 				8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */,
 				8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */,
 			);
@@ -338,6 +341,7 @@
 				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
 				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
 				8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */,
+				8BE647732C5F93AF00619D12 /* InsectsDetectorModel.mlpackage in Sources */,
 				8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
