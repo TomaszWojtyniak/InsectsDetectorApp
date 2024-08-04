@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */; };
-		8B1393442BCAECAE00D33733 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1393432BCAECAE00D33733 /* ContentView.swift */; };
 		8B1393462BCAECAF00D33733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1393452BCAECAF00D33733 /* Assets.xcassets */; };
 		8B1393492BCAECAF00D33733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1393482BCAECAF00D33733 /* Preview Assets.xcassets */; };
 		8B1393532BCAECAF00D33733 /* InsectsDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1393522BCAECAF00D33733 /* InsectsDetectorTests.swift */; };
 		8B13935D2BCAECAF00D33733 /* InsectsDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13935C2BCAECAF00D33733 /* InsectsDetectorUITests.swift */; };
 		8B13935F2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */; };
-		8B13936C2BCAECED00D33733 /* MLModelLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13936B2BCAECEC00D33733 /* MLModelLauncher.swift */; };
-		8B13936D2BCAECED00D33733 /* MLModelLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13936B2BCAECEC00D33733 /* MLModelLauncher.swift */; };
-		8BFA92E52BDE7249004D499A /* InsectsClassifierModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92E42BDE7249004D499A /* InsectsClassifierModel.mlpackage */; };
+		8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */; };
+		8BCB27D52BE39E2200C7E61C /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D42BE39E2200C7E61C /* AccessCameraView.swift */; };
+		8BCB27D82BE39E5C00C7E61C /* CameraCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D72BE39E5C00C7E61C /* CameraCoordinator.swift */; };
+		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
+		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
+		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
+		8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */; };
+		8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92E62BDE72FF004D499A /* TabBar.swift */; };
+		8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92EA2BDE74D6004D499A /* AppScreen.swift */; };
+		8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */; };
+		8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92F12BDE7623004D499A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 /* Begin PBXFileReference section */
 		8B13933E2BCAECAE00D33733 /* InsectsDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsectsDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorApp.swift; sourceTree = "<group>"; };
-		8B1393432BCAECAE00D33733 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B1393452BCAECAF00D33733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1393482BCAECAF00D33733 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B13934E2BCAECAF00D33733 /* InsectsDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsectsDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,8 +53,17 @@
 		8B1393582BCAECAF00D33733 /* InsectsDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsectsDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B13935C2BCAECAF00D33733 /* InsectsDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorUITests.swift; sourceTree = "<group>"; };
 		8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8B13936B2BCAECEC00D33733 /* MLModelLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModelLauncher.swift; sourceTree = "<group>"; };
-		8BFA92E42BDE7249004D499A /* InsectsClassifierModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = InsectsClassifierModel.mlpackage; sourceTree = "<group>"; };
+		8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		8BCB27D42BE39E2200C7E61C /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
+		8BCB27D72BE39E5C00C7E61C /* CameraCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCoordinator.swift; sourceTree = "<group>"; };
+		8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
+		8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		8BFA92E62BDE72FF004D499A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		8BFA92EA2BDE74D6004D499A /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStack.swift; sourceTree = "<group>"; };
+		8BFA92F12BDE7623004D499A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +114,12 @@
 		8B1393402BCAECAE00D33733 /* InsectsDetector */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA92E42BDE7249004D499A /* InsectsClassifierModel.mlpackage */,
 				8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */,
-				8B1393432BCAECAE00D33733 /* ContentView.swift */,
-				8B13936B2BCAECEC00D33733 /* MLModelLauncher.swift */,
+				8BFA92F32BDE79DA004D499A /* Scan */,
+				8BFA92EC2BDE75CE004D499A /* Home */,
+				8BFA92E92BDE74AD004D499A /* Model */,
+				8BFA92E82BDE749A004D499A /* Navigation */,
+				8BCB27D62BE39E4C00C7E61C /* Helpers */,
 				8B1393452BCAECAF00D33733 /* Assets.xcassets */,
 				8B1393472BCAECAF00D33733 /* Preview Content */,
 			);
@@ -132,6 +149,52 @@
 				8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */,
 			);
 			path = InsectsDetectorUITests;
+			sourceTree = "<group>";
+		};
+		8BCB27D62BE39E4C00C7E61C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB27D72BE39E5C00C7E61C /* CameraCoordinator.swift */,
+				8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */,
+				8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8BFA92E82BDE749A004D499A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA92E62BDE72FF004D499A /* TabBar.swift */,
+				8BFA92EA2BDE74D6004D499A /* AppScreen.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		8BFA92E92BDE74AD004D499A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */,
+				8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BFA92EC2BDE75CE004D499A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */,
+				8BFA92F12BDE7623004D499A /* HomeView.swift */,
+				8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8BFA92F32BDE79DA004D499A /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB27D42BE39E2200C7E61C /* AccessCameraView.swift */,
+			);
+			path = Scan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,10 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BFA92E52BDE7249004D499A /* InsectsClassifierModel.mlpackage in Sources */,
-				8B1393442BCAECAE00D33733 /* ContentView.swift in Sources */,
+				8BCB27D82BE39E5C00C7E61C /* CameraCoordinator.swift in Sources */,
+				8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */,
-				8B13936C2BCAECED00D33733 /* MLModelLauncher.swift in Sources */,
+				8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */,
+				8BCB27D52BE39E2200C7E61C /* AccessCameraView.swift in Sources */,
+				8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */,
+				8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */,
+				8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */,
+				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
+				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
+				8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */,
+				8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B13936D2BCAECED00D33733 /* MLModelLauncher.swift in Sources */,
 				8B1393532BCAECAF00D33733 /* InsectsDetectorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +505,7 @@
 				DEVELOPMENT_TEAM = FQPC8VYA96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Enable camera usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,6 +535,7 @@
 				DEVELOPMENT_TEAM = FQPC8VYA96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Enable camera usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
