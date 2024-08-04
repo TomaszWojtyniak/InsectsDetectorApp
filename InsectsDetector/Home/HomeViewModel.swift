@@ -46,7 +46,7 @@ class HomeViewModel {
                 name = String(name.prefix(upTo: firstComma))
             }
 
-            return "\(name) - \(prediction.confidencePercentage)%"
+            return "\(name): \(prediction.confidencePercentage)%"
         }
 
         return topPredictions
