@@ -10,6 +10,8 @@ import SwiftUI
 
 enum AppScreen: Codable, Hashable, Identifiable, CaseIterable {
     case home
+    case empty
+    case settings
     
     var id: AppScreen { self }
 }
@@ -20,6 +22,10 @@ extension AppScreen {
         switch self {
         case .home:
             Label("Home", systemImage: "house")
+        case .empty:
+            EmptyView()
+        case .settings:
+            Label("Settings", systemImage: "list.bullet")
         }
     }
     
@@ -28,6 +34,10 @@ extension AppScreen {
         switch self {
         case .home:
             HomeNavigationStack()
+        case .empty:
+            Spacer()
+        case .settings:
+            SettingsNavigationStack()
         }
     }
 }

@@ -14,8 +14,10 @@
 		8B13935D2BCAECAF00D33733 /* InsectsDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13935C2BCAECAF00D33733 /* InsectsDetectorUITests.swift */; };
 		8B13935F2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */; };
 		8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */; };
-		8BCB27D52BE39E2200C7E61C /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D42BE39E2200C7E61C /* AccessCameraView.swift */; };
-		8BCB27D82BE39E5C00C7E61C /* CameraCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D72BE39E5C00C7E61C /* CameraCoordinator.swift */; };
+		8BA185552C6169720050A60C /* SettingsNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185542C6169720050A60C /* SettingsNavigationStack.swift */; };
+		8BA185572C6169920050A60C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185562C6169920050A60C /* SettingsView.swift */; };
+		8BA1855C2C6175660050A60C /* ScannerNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */; };
+		8BA185602C61758D0050A60C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1855F2C61758D0050A60C /* ScannerView.swift */; };
 		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
 		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
@@ -55,8 +57,10 @@
 		8B13935C2BCAECAF00D33733 /* InsectsDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorUITests.swift; sourceTree = "<group>"; };
 		8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
-		8BCB27D42BE39E2200C7E61C /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
-		8BCB27D72BE39E5C00C7E61C /* CameraCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCoordinator.swift; sourceTree = "<group>"; };
+		8BA185542C6169720050A60C /* SettingsNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationStack.swift; sourceTree = "<group>"; };
+		8BA185562C6169920050A60C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerNavigationStack.swift; sourceTree = "<group>"; };
+		8BA1855F2C61758D0050A60C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -116,8 +120,9 @@
 		8B1393402BCAECAE00D33733 /* InsectsDetector */ = {
 			isa = PBXGroup;
 			children = (
+				8BA1855A2C6175570050A60C /* Scanner */,
+				8BA185532C6169500050A60C /* Settings */,
 				8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */,
-				8BFA92F32BDE79DA004D499A /* Scan */,
 				8BFA92EC2BDE75CE004D499A /* Home */,
 				8BFA92E92BDE74AD004D499A /* Model */,
 				8BFA92E82BDE749A004D499A /* Navigation */,
@@ -153,10 +158,27 @@
 			path = InsectsDetectorUITests;
 			sourceTree = "<group>";
 		};
+		8BA185532C6169500050A60C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8BA185542C6169720050A60C /* SettingsNavigationStack.swift */,
+				8BA185562C6169920050A60C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8BA1855A2C6175570050A60C /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */,
+				8BA1855F2C61758D0050A60C /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
 		8BCB27D62BE39E4C00C7E61C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8BCB27D72BE39E5C00C7E61C /* CameraCoordinator.swift */,
 				8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */,
 				8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */,
 			);
@@ -190,14 +212,6 @@
 				8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		8BFA92F32BDE79DA004D499A /* Scan */ = {
-			isa = PBXGroup;
-			children = (
-				8BCB27D42BE39E2200C7E61C /* AccessCameraView.swift */,
-			);
-			path = Scan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,19 +344,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCB27D82BE39E5C00C7E61C /* CameraCoordinator.swift in Sources */,
 				8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */,
 				8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */,
-				8BCB27D52BE39E2200C7E61C /* AccessCameraView.swift in Sources */,
 				8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */,
 				8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */,
 				8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */,
+				8BA185572C6169920050A60C /* SettingsView.swift in Sources */,
+				8BA185552C6169720050A60C /* SettingsNavigationStack.swift in Sources */,
 				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
+				8BA185602C61758D0050A60C /* ScannerView.swift in Sources */,
 				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
 				8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */,
 				8BE647732C5F93AF00619D12 /* InsectsDetectorModel.mlpackage in Sources */,
 				8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */,
+				8BA1855C2C6175660050A60C /* ScannerNavigationStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

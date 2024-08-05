@@ -1,19 +1,17 @@
 //
-//  HomeView.swift
+//  SettingsView.swift
 //  InsectsDetector
 //
-//  Created by Tomasz Wojtyniak on 28/04/2024.
+//  Created by Tomasz Wojtyniak on 05/08/2024.
 //
 
 import SwiftUI
 
-struct HomeView: View {
-    private var viewModel = HomeViewModel()
-    
+struct SettingsView: View {
     var body: some View {
         VStack {
             VStack {
-                Text("Home")
+                Text("Settings")
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -22,5 +20,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    SettingsView()
 }
