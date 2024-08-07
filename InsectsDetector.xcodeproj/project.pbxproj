@@ -18,6 +18,9 @@
 		8BA185572C6169920050A60C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185562C6169920050A60C /* SettingsView.swift */; };
 		8BA1855C2C6175660050A60C /* ScannerNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */; };
 		8BA185602C61758D0050A60C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1855F2C61758D0050A60C /* ScannerView.swift */; };
+		8BA1859E2C63AEC20050A60C /* ScannerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1859D2C63AEC20050A60C /* ScannerDataModel.swift */; };
+		8BA185A02C63FC060050A60C /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1859F2C63FC060050A60C /* ButtonsView.swift */; };
+		8BA185A22C63FCBF0050A60C /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185A12C63FCBF0050A60C /* ThumbnailView.swift */; };
 		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
 		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
@@ -61,6 +64,9 @@
 		8BA185562C6169920050A60C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerNavigationStack.swift; sourceTree = "<group>"; };
 		8BA1855F2C61758D0050A60C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		8BA1859D2C63AEC20050A60C /* ScannerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDataModel.swift; sourceTree = "<group>"; };
+		8BA1859F2C63FC060050A60C /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		8BA185A12C63FCBF0050A60C /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
 		8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -172,6 +178,9 @@
 			children = (
 				8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */,
 				8BA1855F2C61758D0050A60C /* ScannerView.swift */,
+				8BA1859D2C63AEC20050A60C /* ScannerDataModel.swift */,
+				8BA1859F2C63FC060050A60C /* ButtonsView.swift */,
+				8BA185A12C63FCBF0050A60C /* ThumbnailView.swift */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -347,11 +356,14 @@
 				8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */,
 				8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */,
+				8BA185A22C63FCBF0050A60C /* ThumbnailView.swift in Sources */,
 				8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */,
 				8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */,
 				8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */,
+				8BA1859E2C63AEC20050A60C /* ScannerDataModel.swift in Sources */,
 				8BA185572C6169920050A60C /* SettingsView.swift in Sources */,
 				8BA185552C6169720050A60C /* SettingsNavigationStack.swift in Sources */,
+				8BA185A02C63FC060050A60C /* ButtonsView.swift in Sources */,
 				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
 				8BA185602C61758D0050A60C /* ScannerView.swift in Sources */,
 				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
@@ -526,6 +538,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Enable camera usage";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photos to allow you to select and upload images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -556,6 +569,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Enable camera usage";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photos to allow you to select and upload images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

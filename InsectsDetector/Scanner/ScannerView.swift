@@ -8,10 +8,31 @@
 import SwiftUI
 
 struct ScannerView: View {
+    @State private var model = ScannerDataModel()
+    
     var body: some View {
-        Text("Scanner")
+        VStack {
+            GeometryReader { geometry in
+                if let image = model.image {
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: geometry.size.width,
+                               height: geometry.size.height)
+                } else {
+                    ContentUnavailableView("No image", systemImage: "xmark.circle.fill")
+                        
+                }
+            }
+            
+            Spacer()
+            
+            ButtonsView()
+                .environment(model)
+        }
     }
 }
+
 
 #Preview {
     ScannerView()
