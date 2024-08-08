@@ -34,7 +34,7 @@ struct ButtonsView: View {
             }
             
             Button {
-
+                model.cameraManager.takePhoto()
             } label: {
                 Label {
                     Text("Take Photo")
@@ -55,7 +55,7 @@ struct ButtonsView: View {
             } label: {
                 Label("Switch Camera", systemImage: "arrow.triangle.2.circlepath")
                     .font(.system(size: 36, weight: .bold))
-                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                    .foregroundColor(.clear)
             }
             
             Spacer()
@@ -64,9 +64,6 @@ struct ButtonsView: View {
         .buttonStyle(.plain)
         .labelStyle(.iconOnly)
         .padding()
-        .onAppear {
-            model.loadThumbnailImage()
-        }
     }
 }
 
