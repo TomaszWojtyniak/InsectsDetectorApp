@@ -21,8 +21,10 @@ struct ScannerView: View {
                             .frame(width: geometry.size.width,
                                    height: geometry.size.height)
                     } else {
-                        ContentUnavailableView("No image", systemImage: "xmark.circle.fill")
-                            
+                        ProgressView()
+                            .progressViewStyle(.circular)
+                            .scaleEffect(2)
+                            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
                     }
                 }
                 

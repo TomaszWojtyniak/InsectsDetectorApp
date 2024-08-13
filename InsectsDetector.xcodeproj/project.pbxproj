@@ -26,6 +26,10 @@
 		8BA185AD2C654EAA0050A60C /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185AC2C654EAA0050A60C /* CMSampleBuffer+Extension.swift */; };
 		8BA185AF2C654EC50050A60C /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185AE2C654EC50050A60C /* CIImage+Extension.swift */; };
 		8BA185B22C6565C50050A60C /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B12C6565C50050A60C /* CropImageView.swift */; };
+		8BA185B52C6BC74D0050A60C /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B42C6BC74D0050A60C /* CGImage+Extension.swift */; };
+		8BA185B72C6BC9140050A60C /* CropImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */; };
+		8BA185B92C6BC9BA0050A60C /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */; };
+		8BA185BC2C6BCC910050A60C /* DetectInsectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */; };
 		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
 		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
@@ -77,6 +81,10 @@
 		8BA185AC2C654EAA0050A60C /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
 		8BA185AE2C654EC50050A60C /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
 		8BA185B12C6565C50050A60C /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
+		8BA185B42C6BC74D0050A60C /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageDataModel.swift; sourceTree = "<group>"; };
+		8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectInsectView.swift; sourceTree = "<group>"; };
 		8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 		8B1393402BCAECAE00D33733 /* InsectsDetector */ = {
 			isa = PBXGroup;
 			children = (
+				8BA185BA2C6BCC700050A60C /* DetectInsect */,
 				8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */,
 				8BA185B02C6565B40050A60C /* CropImage */,
 				8BA1855A2C6175570050A60C /* Scanner */,
@@ -202,8 +211,17 @@
 			isa = PBXGroup;
 			children = (
 				8BA185B12C6565C50050A60C /* CropImageView.swift */,
+				8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */,
 			);
 			path = CropImage;
+			sourceTree = "<group>";
+		};
+		8BA185BA2C6BCC700050A60C /* DetectInsect */ = {
+			isa = PBXGroup;
+			children = (
+				8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */,
+			);
+			path = DetectInsect;
 			sourceTree = "<group>";
 		};
 		8BCB27D62BE39E4C00C7E61C /* Helpers */ = {
@@ -213,6 +231,8 @@
 				8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */,
 				8BA185AC2C654EAA0050A60C /* CMSampleBuffer+Extension.swift */,
 				8BA185AE2C654EC50050A60C /* CIImage+Extension.swift */,
+				8BA185B42C6BC74D0050A60C /* CGImage+Extension.swift */,
+				8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -381,8 +401,10 @@
 				8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */,
 				8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */,
 				8BA185A22C63FCBF0050A60C /* ThumbnailView.swift in Sources */,
+				8BA185BC2C6BCC910050A60C /* DetectInsectView.swift in Sources */,
 				8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */,
 				8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */,
+				8BA185B92C6BC9BA0050A60C /* Image+Extension.swift in Sources */,
 				8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */,
 				8BA1859E2C63AEC20050A60C /* ScannerDataModel.swift in Sources */,
 				8BA185A92C6548810050A60C /* CameraManager.swift in Sources */,
@@ -393,12 +415,14 @@
 				8BA185A02C63FC060050A60C /* ButtonsView.swift in Sources */,
 				8BA185AB2C6549D80050A60C /* PhotoLibrary.swift in Sources */,
 				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
+				8BA185B72C6BC9140050A60C /* CropImageDataModel.swift in Sources */,
 				8BA185602C61758D0050A60C /* ScannerView.swift in Sources */,
 				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
 				8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */,
 				8BE647732C5F93AF00619D12 /* InsectsDetectorModel.mlpackage in Sources */,
 				8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */,
 				8BA1855C2C6175660050A60C /* ScannerNavigationStack.swift in Sources */,
+				8BA185B52C6BC74D0050A60C /* CGImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

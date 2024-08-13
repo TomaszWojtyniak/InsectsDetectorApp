@@ -163,7 +163,7 @@ extension CameraManager: AVCapturePhotoCaptureDelegate {
         }
         
         if let image = photo.cgImageRepresentation() {
-            self.capturedPhoto = image
+            self.capturedPhoto = image.rotated(byDegrees: 270)
             
             addToPreviewStream?(image)
         }

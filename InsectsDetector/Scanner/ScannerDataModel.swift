@@ -14,7 +14,6 @@ final class ScannerDataModel {
     
     let cameraManager = CameraManager()
     
-    var image: Image?
     var thumbnailImage: Image?
     var currentFrame: CGImage?
     var isImageCaptured: Bool = false
