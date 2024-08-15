@@ -1,22 +1,32 @@
 //
-//  HomeViewModel.swift
+//  DetectInsectDataModel.swift
 //  InsectsDetector
 //
-//  Created by Tomasz Wojtyniak on 02/05/2024.
+//  Created by Tomasz Wojtyniak on 15/08/2024.
 //
 
 import SwiftUI
-import Vision
 
 @Observable
-class HomeViewModel {
+class DetectInsectDataModel {
     
     let imagePredictor = ImagePredictor()
     
-    let predictionsToShow = 10
+    let predictionsToShow = 5
     
+    var predictions: String?
+    
+    func saveDetectedInsect(image: UIImage) {
+        let date = Date.now
+        let detectedInsect = DetectedInsect(date: date, image: image, prediction: predictions ?? "")
+        UserDefaults.standard.setValue(detectedInsect.toDictionary(), forKey: "DetectedInsect-\(date)-\(UUID().uuidString)")
+    }
+}
+
+extension DetectInsectDataModel {
     func classifyImage(image: UIImage) {
         do {
+            guard let image = image.resized(toWidth: 224) else { return }
             try self.imagePredictor.makePredictions(for: image,
                                                     completionHandler: imagePredictionHandler)
         } catch {
@@ -32,7 +42,7 @@ class HomeViewModel {
         let formattedPredictions = formatPredictions(predictions)
 
         let predictionString = formattedPredictions.joined(separator: "\n")
-        print(predictionString)
+        self.predictions = predictionString
         
     }
     
@@ -46,7 +56,7 @@ class HomeViewModel {
                 name = String(name.prefix(upTo: firstComma))
             }
 
-            return "\(name): \(prediction.confidencePercentage)%"
+            return "\(name.capitalizingFirstLetter()): \(prediction.confidencePercentage)%"
         }
 
         return topPredictions

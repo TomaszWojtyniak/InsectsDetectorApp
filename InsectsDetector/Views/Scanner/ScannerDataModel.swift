@@ -46,6 +46,7 @@ final class ScannerDataModel {
         }
         
         let fetchOptions = PHFetchOptions()
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         fetchOptions.fetchLimit = 1
         let fetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions)
         

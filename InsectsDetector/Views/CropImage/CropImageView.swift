@@ -11,22 +11,22 @@ struct CropImageView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var model = CropImageDataModel()
     
-    @State private var scale: CGFloat = 1.0
+    @State private var scale: CGFloat = 2.0
     @State private var offset: CGSize = .zero
     @State private var lastOffset: CGSize = .zero
     @State private var croppedImage: UIImage? = nil
     
     @State var isImageCropped: Bool = false
 
-    var image: Image
-    var cropSize: CGSize = CGSize(width: 350, height: 350)
+    var image: UIImage
+    var cropSize: CGSize = CGSize(width: 224, height: 224)
     
     var body: some View {
         NavigationStack {
             VStack {
                 GeometryReader { geometry in
                     ZStack {
-                        image
+                        Image(uiImage: image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .scaleEffect(scale)
@@ -35,15 +35,17 @@ struct CropImageView: View {
                                 DragGesture()
                                     .onChanged { value in
                                         offset = CGSize(width: lastOffset.width + value.translation.width, height: lastOffset.height + value.translation.height)
+                                        //print(offset)
                                     }
                                     .onEnded { value in
+                                        print(offset)
                                         lastOffset = offset
                                     }
                             )
                             .gesture(
                                 MagnificationGesture()
                                     .onChanged { value in
-                                        scale = value.magnitude
+                                        //scale = value.magnitude
                                     }
                             )
                             .frame(width: geometry.size.width, height: geometry.size.height)
@@ -62,6 +64,7 @@ struct CropImageView: View {
                                                         scale: self.scale,
                                                         offset: self.offset,
                                                         image: self.image)
+                    
                     self.isImageCropped = true
                 } label: {
                     Text("Crop")
@@ -74,9 +77,13 @@ struct CropImageView: View {
                 .padding()
 
             }
+            .onAppear {
+                self.scale = 1.0
+                self.offset = .zero
+            }
         }.navigationDestination(isPresented: $isImageCropped) {
             if let croppedImage {
-                DetectInsectView(image: Image(uiImage: croppedImage))
+                DetectInsectView(showingSheet: .constant(true), image: image)
             }
         }
         .navigationTitle("Crop the image")
@@ -84,5 +91,5 @@ struct CropImageView: View {
 }
 
 #Preview {
-    CropImageView(image: Image(systemName: "photo"))
+    CropImageView(image: UIImage(systemName: "photo") ?? UIImage())
 }

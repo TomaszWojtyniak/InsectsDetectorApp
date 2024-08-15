@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScannerView: View {
     @State private var model = ScannerDataModel()
+    @Binding var showingSheet: Bool
     
     var body: some View {
         NavigationStack {
@@ -42,7 +43,8 @@ struct ScannerView: View {
             }
         }.navigationDestination(isPresented: $model.isImageCaptured) {
             if let cgImage = model.cameraManager.capturedPhoto {
-                CropImageView(image: Image(uiImage: UIImage(cgImage: cgImage)))
+                //CropImageView(image: UIImage(cgImage: cgImage))
+                DetectInsectView(showingSheet: $showingSheet, image: UIImage(cgImage: cgImage))
             }
         }
     }
@@ -50,5 +52,5 @@ struct ScannerView: View {
 
 
 #Preview {
-    ScannerView()
+    ScannerView(showingSheet: .constant(true))
 }

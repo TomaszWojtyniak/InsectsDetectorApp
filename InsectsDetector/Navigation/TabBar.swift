@@ -37,7 +37,7 @@ struct TabBar: View {
                     .frame(width: 30, height: 25)
                     .aspectRatio(contentMode: .fit)
             }.sheet(isPresented: $showingSheet) {
-                ScannerNavigationStack()
+                ScannerNavigationStack(showingSheet: $showingSheet)
             }
             .frame(width: 60, height: 60)
             .background(Color.accentColor)
@@ -55,4 +55,15 @@ struct TabBar: View {
 
 #Preview {
     TabBar()
+}
+
+struct SheetOpen: EnvironmentKey {
+    static var defaultValue: Binding<Bool> = .constant(false)
+}
+
+extension EnvironmentValues {
+    var sheetOpen: Binding<Bool> {
+        get { self[SheetOpen.self] }
+        set { self[SheetOpen.self] = newValue }
+    }
 }

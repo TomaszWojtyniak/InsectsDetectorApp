@@ -16,7 +16,6 @@
 		8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */; };
 		8BA185552C6169720050A60C /* SettingsNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185542C6169720050A60C /* SettingsNavigationStack.swift */; };
 		8BA185572C6169920050A60C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185562C6169920050A60C /* SettingsView.swift */; };
-		8BA1855C2C6175660050A60C /* ScannerNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */; };
 		8BA185602C61758D0050A60C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1855F2C61758D0050A60C /* ScannerView.swift */; };
 		8BA1859E2C63AEC20050A60C /* ScannerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1859D2C63AEC20050A60C /* ScannerDataModel.swift */; };
 		8BA185A02C63FC060050A60C /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1859F2C63FC060050A60C /* ButtonsView.swift */; };
@@ -30,6 +29,16 @@
 		8BA185B72C6BC9140050A60C /* CropImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */; };
 		8BA185B92C6BC9BA0050A60C /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */; };
 		8BA185BC2C6BCC910050A60C /* DetectInsectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */; };
+		8BA185BE2C6E11480050A60C /* DetectInsectDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185BD2C6E11480050A60C /* DetectInsectDataModel.swift */; };
+		8BA185C02C6E1A930050A60C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185BF2C6E1A920050A60C /* UIImage+Extension.swift */; };
+		8BA185C22C6E38600050A60C /* ScannerNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185C12C6E38600050A60C /* ScannerNavigationStack.swift */; };
+		8BA185C42C6E3CD60050A60C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185C32C6E3CD60050A60C /* String+Extension.swift */; };
+		8BA185C92C6E881D0050A60C /* DetectedInsect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185C82C6E881D0050A60C /* DetectedInsect.swift */; };
+		8BA185CB2C6E99760050A60C /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CA2C6E99760050A60C /* SettingViewModel.swift */; };
+		8BA185CE2C6EA5EA0050A60C /* DetectedInsectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CD2C6EA5EA0050A60C /* DetectedInsectItemView.swift */; };
+		8BA185D02C6EA9C80050A60C /* DetectedInsectItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CF2C6EA9C80050A60C /* DetectedInsectItemViewModel.swift */; };
+		8BA185D22C6EAD090050A60C /* DetectedInsectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */; };
+		8BA185D52C6EAD350050A60C /* DetectedInsectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */; };
 		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
 		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
@@ -71,7 +80,6 @@
 		8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		8BA185542C6169720050A60C /* SettingsNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationStack.swift; sourceTree = "<group>"; };
 		8BA185562C6169920050A60C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerNavigationStack.swift; sourceTree = "<group>"; };
 		8BA1855F2C61758D0050A60C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		8BA1859D2C63AEC20050A60C /* ScannerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDataModel.swift; sourceTree = "<group>"; };
 		8BA1859F2C63FC060050A60C /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,16 @@
 		8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageDataModel.swift; sourceTree = "<group>"; };
 		8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectInsectView.swift; sourceTree = "<group>"; };
+		8BA185BD2C6E11480050A60C /* DetectInsectDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectInsectDataModel.swift; sourceTree = "<group>"; };
+		8BA185BF2C6E1A920050A60C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8BA185C12C6E38600050A60C /* ScannerNavigationStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerNavigationStack.swift; sourceTree = "<group>"; };
+		8BA185C32C6E3CD60050A60C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		8BA185C82C6E881D0050A60C /* DetectedInsect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsect.swift; sourceTree = "<group>"; };
+		8BA185CA2C6E99760050A60C /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		8BA185CD2C6EA5EA0050A60C /* DetectedInsectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectItemView.swift; sourceTree = "<group>"; };
+		8BA185CF2C6EA9C80050A60C /* DetectedInsectItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectItemViewModel.swift; sourceTree = "<group>"; };
+		8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectDetailViewModel.swift; sourceTree = "<group>"; };
+		8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectDetailView.swift; sourceTree = "<group>"; };
 		8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
@@ -144,16 +162,13 @@
 		8B1393402BCAECAE00D33733 /* InsectsDetector */ = {
 			isa = PBXGroup;
 			children = (
-				8BA185BA2C6BCC700050A60C /* DetectInsect */,
 				8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */,
-				8BA185B02C6565B40050A60C /* CropImage */,
-				8BA1855A2C6175570050A60C /* Scanner */,
-				8BA185532C6169500050A60C /* Settings */,
-				8BFA92EC2BDE75CE004D499A /* Home */,
-				8BFA92E92BDE74AD004D499A /* Model */,
+				8BA185C52C6E879D0050A60C /* Views */,
+				8BFA92E92BDE74AD004D499A /* MLModel */,
 				8BFA92E82BDE749A004D499A /* Navigation */,
+				8BA185C72C6E87DA0050A60C /* Models */,
+				8BA185C62C6E87CD0050A60C /* Resources */,
 				8BCB27D62BE39E4C00C7E61C /* Helpers */,
-				8B1393452BCAECAF00D33733 /* Assets.xcassets */,
 				8B1393472BCAECAF00D33733 /* Preview Content */,
 			);
 			path = InsectsDetector;
@@ -189,6 +204,7 @@
 			children = (
 				8BA185542C6169720050A60C /* SettingsNavigationStack.swift */,
 				8BA185562C6169920050A60C /* SettingsView.swift */,
+				8BA185CA2C6E99760050A60C /* SettingViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -196,7 +212,7 @@
 		8BA1855A2C6175570050A60C /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
-				8BA1855B2C6175660050A60C /* ScannerNavigationStack.swift */,
+				8BA185C12C6E38600050A60C /* ScannerNavigationStack.swift */,
 				8BA1855F2C61758D0050A60C /* ScannerView.swift */,
 				8BA1859D2C63AEC20050A60C /* ScannerDataModel.swift */,
 				8BA1859F2C63FC060050A60C /* ButtonsView.swift */,
@@ -220,8 +236,57 @@
 			isa = PBXGroup;
 			children = (
 				8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */,
+				8BA185BD2C6E11480050A60C /* DetectInsectDataModel.swift */,
 			);
 			path = DetectInsect;
+			sourceTree = "<group>";
+		};
+		8BA185C52C6E879D0050A60C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BA185D32C6EAD240050A60C /* DetectedInsectDetail */,
+				8BA185CC2C6EA5BF0050A60C /* DetectedInsectItem */,
+				8BA185BA2C6BCC700050A60C /* DetectInsect */,
+				8BA185B02C6565B40050A60C /* CropImage */,
+				8BA1855A2C6175570050A60C /* Scanner */,
+				8BA185532C6169500050A60C /* Settings */,
+				8BFA92EC2BDE75CE004D499A /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BA185C62C6E87CD0050A60C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B1393452BCAECAF00D33733 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BA185C72C6E87DA0050A60C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BA185C82C6E881D0050A60C /* DetectedInsect.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8BA185CC2C6EA5BF0050A60C /* DetectedInsectItem */ = {
+			isa = PBXGroup;
+			children = (
+				8BA185CD2C6EA5EA0050A60C /* DetectedInsectItemView.swift */,
+				8BA185CF2C6EA9C80050A60C /* DetectedInsectItemViewModel.swift */,
+			);
+			path = DetectedInsectItem;
+			sourceTree = "<group>";
+		};
+		8BA185D32C6EAD240050A60C /* DetectedInsectDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */,
+				8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */,
+			);
+			path = DetectedInsectDetail;
 			sourceTree = "<group>";
 		};
 		8BCB27D62BE39E4C00C7E61C /* Helpers */ = {
@@ -233,6 +298,8 @@
 				8BA185AE2C654EC50050A60C /* CIImage+Extension.swift */,
 				8BA185B42C6BC74D0050A60C /* CGImage+Extension.swift */,
 				8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */,
+				8BA185BF2C6E1A920050A60C /* UIImage+Extension.swift */,
+				8BA185C32C6E3CD60050A60C /* String+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,14 +313,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		8BFA92E92BDE74AD004D499A /* Model */ = {
+		8BFA92E92BDE74AD004D499A /* MLModel */ = {
 			isa = PBXGroup;
 			children = (
 				8BE647722C5F93AF00619D12 /* InsectsDetectorModel.mlpackage */,
 				8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */,
 				8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */,
 			);
-			path = Model;
+			path = MLModel;
 			sourceTree = "<group>";
 		};
 		8BFA92EC2BDE75CE004D499A /* Home */ = {
@@ -396,19 +463,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA185BE2C6E11480050A60C /* DetectInsectDataModel.swift in Sources */,
 				8BA185B22C6565C50050A60C /* CropImageView.swift in Sources */,
 				8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */,
+				8BA185D52C6EAD350050A60C /* DetectedInsectDetailView.swift in Sources */,
+				8BA185C92C6E881D0050A60C /* DetectedInsect.swift in Sources */,
 				8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */,
 				8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */,
 				8BA185A22C63FCBF0050A60C /* ThumbnailView.swift in Sources */,
 				8BA185BC2C6BCC910050A60C /* DetectInsectView.swift in Sources */,
 				8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */,
 				8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */,
+				8BA185D22C6EAD090050A60C /* DetectedInsectDetailViewModel.swift in Sources */,
 				8BA185B92C6BC9BA0050A60C /* Image+Extension.swift in Sources */,
+				8BA185D02C6EA9C80050A60C /* DetectedInsectItemViewModel.swift in Sources */,
 				8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */,
 				8BA1859E2C63AEC20050A60C /* ScannerDataModel.swift in Sources */,
 				8BA185A92C6548810050A60C /* CameraManager.swift in Sources */,
 				8BA185572C6169920050A60C /* SettingsView.swift in Sources */,
+				8BA185CE2C6EA5EA0050A60C /* DetectedInsectItemView.swift in Sources */,
 				8BA185552C6169720050A60C /* SettingsNavigationStack.swift in Sources */,
 				8BA185AF2C654EC50050A60C /* CIImage+Extension.swift in Sources */,
 				8BA185AD2C654EAA0050A60C /* CMSampleBuffer+Extension.swift in Sources */,
@@ -417,11 +490,14 @@
 				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
 				8BA185B72C6BC9140050A60C /* CropImageDataModel.swift in Sources */,
 				8BA185602C61758D0050A60C /* ScannerView.swift in Sources */,
+				8BA185C02C6E1A930050A60C /* UIImage+Extension.swift in Sources */,
 				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
+				8BA185C22C6E38600050A60C /* ScannerNavigationStack.swift in Sources */,
 				8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */,
+				8BA185CB2C6E99760050A60C /* SettingViewModel.swift in Sources */,
 				8BE647732C5F93AF00619D12 /* InsectsDetectorModel.mlpackage in Sources */,
 				8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */,
-				8BA1855C2C6175660050A60C /* ScannerNavigationStack.swift in Sources */,
+				8BA185C42C6E3CD60050A60C /* String+Extension.swift in Sources */,
 				8BA185B52C6BC74D0050A60C /* CGImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,7 +671,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,7 +702,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

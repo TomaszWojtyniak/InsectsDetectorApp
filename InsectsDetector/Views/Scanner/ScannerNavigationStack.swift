@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ScannerNavigationStack: View {
+    @Binding var showingSheet: Bool
+    
     var body: some View {
         NavigationStack {
-            ScannerView()
+            ScannerView(showingSheet: $showingSheet)
         }
     }
 }
 
 #Preview {
-    ScannerNavigationStack()
+    ScannerNavigationStack(showingSheet: .constant(true))
 }

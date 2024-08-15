@@ -72,7 +72,7 @@ struct ButtonsView: View {
         .toolbar(.hidden)
         .navigationDestination(isPresented: $isImagePicked) {
             if let cgImage = model.cameraManager.capturedPhoto {
-                CropImageView(image: Image(uiImage: UIImage(cgImage: cgImage)))
+                CropImageView(image: UIImage(cgImage: cgImage))
             }
         }
     }
