@@ -28,6 +28,7 @@ class HomeViewModel {
                 }
             }
         }
+        detectedInsectsData = detectedInsectsData.sorted { $0.date > $1.date }
     }
     
     func decodeDictionary<T: Decodable>(from dictionary: [String: Any], toType type: T.Type) -> T? {
