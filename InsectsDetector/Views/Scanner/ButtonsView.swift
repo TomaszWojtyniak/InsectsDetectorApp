@@ -13,6 +13,7 @@ struct ButtonsView: View {
     @State private var pickerItem: PhotosPickerItem?
     @State private var isImagePicked: Bool = false
     @Environment(ScannerDataModel.self) var model
+    @Binding var showingSheet: Bool
     
     var body: some View {
         NavigationStack {
@@ -31,7 +32,7 @@ struct ButtonsView: View {
                     Task {
                         if let image = try? await pickerItem?.loadTransferable(type: Image.self) {
                             model.cameraManager.capturedPhoto = image.asUIImage().cgImage
-                            self.isImagePicked = true
+                            model.isImageCaptured.toggle()
                         }
                     }
                 }
@@ -70,14 +71,9 @@ struct ButtonsView: View {
             .padding(.top, 40)
         }
         .toolbar(.hidden)
-        .navigationDestination(isPresented: $isImagePicked) {
-            if let cgImage = model.cameraManager.capturedPhoto {
-                CropImageView(image: UIImage(cgImage: cgImage))
-            }
-        }
     }
 }
 
 #Preview {
-    ButtonsView()
+    ButtonsView(showingSheet: .constant(true))
 }

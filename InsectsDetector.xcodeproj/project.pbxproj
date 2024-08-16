@@ -24,9 +24,7 @@
 		8BA185AB2C6549D80050A60C /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185AA2C6549D80050A60C /* PhotoLibrary.swift */; };
 		8BA185AD2C654EAA0050A60C /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185AC2C654EAA0050A60C /* CMSampleBuffer+Extension.swift */; };
 		8BA185AF2C654EC50050A60C /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185AE2C654EC50050A60C /* CIImage+Extension.swift */; };
-		8BA185B22C6565C50050A60C /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B12C6565C50050A60C /* CropImageView.swift */; };
 		8BA185B52C6BC74D0050A60C /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B42C6BC74D0050A60C /* CGImage+Extension.swift */; };
-		8BA185B72C6BC9140050A60C /* CropImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */; };
 		8BA185B92C6BC9BA0050A60C /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */; };
 		8BA185BC2C6BCC910050A60C /* DetectInsectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */; };
 		8BA185BE2C6E11480050A60C /* DetectInsectDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185BD2C6E11480050A60C /* DetectInsectDataModel.swift */; };
@@ -39,6 +37,7 @@
 		8BA185D02C6EA9C80050A60C /* DetectedInsectItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CF2C6EA9C80050A60C /* DetectedInsectItemViewModel.swift */; };
 		8BA185D22C6EAD090050A60C /* DetectedInsectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */; };
 		8BA185D52C6EAD350050A60C /* DetectedInsectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */; };
+		8BA185DD2C6FCADE0050A60C /* SwiftyCrop in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA185DC2C6FCADE0050A60C /* SwiftyCrop */; };
 		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
 		8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */; };
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
@@ -88,9 +87,7 @@
 		8BA185AA2C6549D80050A60C /* PhotoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		8BA185AC2C654EAA0050A60C /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
 		8BA185AE2C654EC50050A60C /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
-		8BA185B12C6565C50050A60C /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
 		8BA185B42C6BC74D0050A60C /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
-		8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageDataModel.swift; sourceTree = "<group>"; };
 		8BA185B82C6BC9BA0050A60C /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		8BA185BB2C6BCC910050A60C /* DetectInsectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectInsectView.swift; sourceTree = "<group>"; };
 		8BA185BD2C6E11480050A60C /* DetectInsectDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectInsectDataModel.swift; sourceTree = "<group>"; };
@@ -119,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA185DD2C6FCADE0050A60C /* SwiftyCrop in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +144,7 @@
 				8B1393512BCAECAF00D33733 /* InsectsDetectorTests */,
 				8B13935B2BCAECAF00D33733 /* InsectsDetectorUITests */,
 				8B13933F2BCAECAE00D33733 /* Products */,
+				8BA185DB2C6FCADE0050A60C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,15 +222,6 @@
 			path = Scanner;
 			sourceTree = "<group>";
 		};
-		8BA185B02C6565B40050A60C /* CropImage */ = {
-			isa = PBXGroup;
-			children = (
-				8BA185B12C6565C50050A60C /* CropImageView.swift */,
-				8BA185B62C6BC9140050A60C /* CropImageDataModel.swift */,
-			);
-			path = CropImage;
-			sourceTree = "<group>";
-		};
 		8BA185BA2C6BCC700050A60C /* DetectInsect */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,7 +237,6 @@
 				8BA185D32C6EAD240050A60C /* DetectedInsectDetail */,
 				8BA185CC2C6EA5BF0050A60C /* DetectedInsectItem */,
 				8BA185BA2C6BCC700050A60C /* DetectInsect */,
-				8BA185B02C6565B40050A60C /* CropImage */,
 				8BA1855A2C6175570050A60C /* Scanner */,
 				8BA185532C6169500050A60C /* Settings */,
 				8BFA92EC2BDE75CE004D499A /* Home */,
@@ -287,6 +276,13 @@
 				8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */,
 			);
 			path = DetectedInsectDetail;
+			sourceTree = "<group>";
+		};
+		8BA185DB2C6FCADE0050A60C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8BCB27D62BE39E4C00C7E61C /* Helpers */ = {
@@ -349,6 +345,9 @@
 			dependencies = (
 			);
 			name = InsectsDetector;
+			packageProductDependencies = (
+				8BA185DC2C6FCADE0050A60C /* SwiftyCrop */,
+			);
 			productName = InsectsDetector;
 			productReference = 8B13933E2BCAECAE00D33733 /* InsectsDetector.app */;
 			productType = "com.apple.product-type.application";
@@ -421,6 +420,9 @@
 				Base,
 			);
 			mainGroup = 8B1393352BCAECAE00D33733;
+			packageReferences = (
+				8BA185DA2C6FC9D70050A60C /* XCRemoteSwiftPackageReference "SwiftyCrop" */,
+			);
 			productRefGroup = 8B13933F2BCAECAE00D33733 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,7 +466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA185BE2C6E11480050A60C /* DetectInsectDataModel.swift in Sources */,
-				8BA185B22C6565C50050A60C /* CropImageView.swift in Sources */,
 				8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				8BA185D52C6EAD350050A60C /* DetectedInsectDetailView.swift in Sources */,
 				8BA185C92C6E881D0050A60C /* DetectedInsect.swift in Sources */,
@@ -488,7 +489,6 @@
 				8BA185A02C63FC060050A60C /* ButtonsView.swift in Sources */,
 				8BA185AB2C6549D80050A60C /* PhotoLibrary.swift in Sources */,
 				8BFA92F22BDE7623004D499A /* HomeView.swift in Sources */,
-				8BA185B72C6BC9140050A60C /* CropImageDataModel.swift in Sources */,
 				8BA185602C61758D0050A60C /* ScannerView.swift in Sources */,
 				8BA185C02C6E1A930050A60C /* UIImage+Extension.swift in Sources */,
 				8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */,
@@ -832,6 +832,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BA185DA2C6FC9D70050A60C /* XCRemoteSwiftPackageReference "SwiftyCrop" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benedom/SwiftyCrop";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BA185DC2C6FCADE0050A60C /* SwiftyCrop */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA185DA2C6FC9D70050A60C /* XCRemoteSwiftPackageReference "SwiftyCrop" */;
+			productName = SwiftyCrop;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B1393362BCAECAE00D33733 /* Project object */;
 }

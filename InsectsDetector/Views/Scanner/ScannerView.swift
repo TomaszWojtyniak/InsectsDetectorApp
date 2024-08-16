@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SwiftyCrop
 
 struct ScannerView: View {
     @State private var model = ScannerDataModel()
     @Binding var showingSheet: Bool
+    @State private var croppedImage: UIImage?
+    @State var isImageCropped: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -31,7 +34,7 @@ struct ScannerView: View {
                 
                 Spacer()
                 
-                ButtonsView()
+                ButtonsView(showingSheet: $showingSheet)
                     .environment(model)
             }
             .task {
@@ -41,10 +44,21 @@ struct ScannerView: View {
                 await model.cameraManager.startSession()
                 await model.loadThumbnail()
             }
-        }.navigationDestination(isPresented: $model.isImageCaptured) {
-            if let cgImage = model.cameraManager.capturedPhoto {
-                //CropImageView(image: UIImage(cgImage: cgImage))
-                DetectInsectView(showingSheet: $showingSheet, image: UIImage(cgImage: cgImage))
+            .fullScreenCover(isPresented: $model.isImageCaptured, onDismiss: {
+                self.isImageCropped.toggle()
+            }, content: {
+                if let cgImage = model.cameraManager.capturedPhoto {
+                    SwiftyCropView(
+                        imageToCrop: UIImage(cgImage: cgImage),
+                        maskShape: .square
+                    ) { croppedImage in
+                        self.croppedImage = croppedImage
+                    }
+                }
+            })
+        }.navigationDestination(isPresented: $isImageCropped) {
+            if let croppedImage {
+                DetectInsectView(showingSheet: $showingSheet, image: croppedImage)
             }
         }
     }
