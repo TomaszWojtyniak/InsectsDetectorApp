@@ -45,7 +45,9 @@ struct ScannerView: View {
                 await model.loadThumbnail()
             }
             .fullScreenCover(isPresented: $model.isImageCaptured, onDismiss: {
-                self.isImageCropped.toggle()
+                if let croppedImage {
+                    self.isImageCropped.toggle()
+                }
             }, content: {
                 if let cgImage = model.cameraManager.capturedPhoto {
                     SwiftyCropView(
@@ -54,6 +56,7 @@ struct ScannerView: View {
                     ) { croppedImage in
                         self.croppedImage = croppedImage
                     }
+                    .background(.secondary)
                 }
             })
         }.navigationDestination(isPresented: $isImageCropped) {
