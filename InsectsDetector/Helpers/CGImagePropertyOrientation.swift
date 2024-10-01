@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ImageIO
 
 extension CGImagePropertyOrientation {
     /// Converts an image orientation to a Core Graphics image property orientation.
