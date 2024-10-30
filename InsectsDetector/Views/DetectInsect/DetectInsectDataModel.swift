@@ -55,8 +55,8 @@ extension DetectInsectDataModel {
             if let firstComma = name.firstIndex(of: ",") {
                 name = String(name.prefix(upTo: firstComma))
             }
-
-            return "\(name.capitalizingFirstLetter()): \(prediction.confidencePercentage)%"
+            name = Insect(rawValue: name)?.name ?? ""
+            return "\(name): \(prediction.confidencePercentage)%"
         }
 
         return topPredictions

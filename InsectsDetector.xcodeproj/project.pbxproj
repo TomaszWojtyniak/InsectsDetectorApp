@@ -10,7 +10,7 @@
 		8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1393412BCAECAE00D33733 /* InsectsDetectorApp.swift */; };
 		8B1393462BCAECAF00D33733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1393452BCAECAF00D33733 /* Assets.xcassets */; };
 		8B1393492BCAECAF00D33733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1393482BCAECAF00D33733 /* Preview Assets.xcassets */; };
-		8B1393532BCAECAF00D33733 /* InsectsDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1393522BCAECAF00D33733 /* InsectsDetectorTests.swift */; };
+		8B1393532BCAECAF00D33733 /* HomeDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1393522BCAECAF00D33733 /* HomeDataModelTests.swift */; };
 		8B13935D2BCAECAF00D33733 /* InsectsDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13935C2BCAECAF00D33733 /* InsectsDetectorUITests.swift */; };
 		8B13935F2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */; };
 		8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13936B2BCAECEC00D33733 /* ImagePredictor.swift */; };
@@ -35,7 +35,7 @@
 		8BA185CB2C6E99760050A60C /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CA2C6E99760050A60C /* SettingViewModel.swift */; };
 		8BA185CE2C6EA5EA0050A60C /* DetectedInsectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CD2C6EA5EA0050A60C /* DetectedInsectItemView.swift */; };
 		8BA185D02C6EA9C80050A60C /* DetectedInsectItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185CF2C6EA9C80050A60C /* DetectedInsectItemViewModel.swift */; };
-		8BA185D22C6EAD090050A60C /* DetectedInsectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */; };
+		8BA185D22C6EAD090050A60C /* DetectedInsectDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D12C6EAD090050A60C /* DetectedInsectDetailDataModel.swift */; };
 		8BA185D52C6EAD350050A60C /* DetectedInsectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */; };
 		8BA185DD2C6FCADE0050A60C /* SwiftyCrop in Frameworks */ = {isa = PBXBuildFile; productRef = 8BA185DC2C6FCADE0050A60C /* SwiftyCrop */; };
 		8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */; };
@@ -43,6 +43,10 @@
 		8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */; };
 		8BCB27E02BE3A6F300C7E61C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */; };
 		8BE647732C5F93AF00619D12 /* InsectsDetectorModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8BE647722C5F93AF00619D12 /* InsectsDetectorModel.mlpackage */; };
+		8BF7B1B22CD2A959007B0180 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7B1B12CD2A959007B0180 /* Localizable.xcstrings */; };
+		8BF7B1B42CD2AFED007B0180 /* Insect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B1B32CD2AFE9007B0180 /* Insect.swift */; };
+		8BF7B1B62CD2B390007B0180 /* LearnMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B1B52CD2B390007B0180 /* LearnMoreView.swift */; };
+		8BF7B1B92CD2B3EA007B0180 /* LearnMoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7B1B82CD2B3E3007B0180 /* LearnMoreDataModel.swift */; };
 		8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92E62BDE72FF004D499A /* TabBar.swift */; };
 		8BFA92EB2BDE74D6004D499A /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92EA2BDE74D6004D499A /* AppScreen.swift */; };
 		8BFA92F02BDE75FC004D499A /* HomeNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */; };
@@ -72,7 +76,7 @@
 		8B1393452BCAECAF00D33733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1393482BCAECAF00D33733 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B13934E2BCAECAF00D33733 /* InsectsDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsectsDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B1393522BCAECAF00D33733 /* InsectsDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorTests.swift; sourceTree = "<group>"; };
+		8B1393522BCAECAF00D33733 /* HomeDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataModelTests.swift; sourceTree = "<group>"; };
 		8B1393582BCAECAF00D33733 /* InsectsDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsectsDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B13935C2BCAECAF00D33733 /* InsectsDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorUITests.swift; sourceTree = "<group>"; };
 		8B13935E2BCAECAF00D33733 /* InsectsDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsectsDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -98,13 +102,17 @@
 		8BA185CA2C6E99760050A60C /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		8BA185CD2C6EA5EA0050A60C /* DetectedInsectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectItemView.swift; sourceTree = "<group>"; };
 		8BA185CF2C6EA9C80050A60C /* DetectedInsectItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectItemViewModel.swift; sourceTree = "<group>"; };
-		8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectDetailViewModel.swift; sourceTree = "<group>"; };
+		8BA185D12C6EAD090050A60C /* DetectedInsectDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectDetailDataModel.swift; sourceTree = "<group>"; };
 		8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedInsectDetailView.swift; sourceTree = "<group>"; };
 		8BCB27D92BE3A32000C7E61C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8BCB27DB2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		8BCB27DD2BE3A54A00C7E61C /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		8BCB27DF2BE3A6F300C7E61C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 		8BE647722C5F93AF00619D12 /* InsectsDetectorModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = InsectsDetectorModel.mlpackage; sourceTree = "<group>"; };
+		8BF7B1B12CD2A959007B0180 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8BF7B1B32CD2AFE9007B0180 /* Insect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insect.swift; sourceTree = "<group>"; };
+		8BF7B1B52CD2B390007B0180 /* LearnMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreView.swift; sourceTree = "<group>"; };
+		8BF7B1B82CD2B3E3007B0180 /* LearnMoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreDataModel.swift; sourceTree = "<group>"; };
 		8BFA92E62BDE72FF004D499A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		8BFA92EA2BDE74D6004D499A /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
 		8BFA92EF2BDE75FC004D499A /* HomeNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStack.swift; sourceTree = "<group>"; };
@@ -184,7 +192,7 @@
 		8B1393512BCAECAF00D33733 /* InsectsDetectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B1393522BCAECAF00D33733 /* InsectsDetectorTests.swift */,
+				8B1393522BCAECAF00D33733 /* HomeDataModelTests.swift */,
 			);
 			path = InsectsDetectorTests;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 		8BA185C52C6E879D0050A60C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8BF7B1B72CD2B396007B0180 /* LearnMore */,
 				8BA185D32C6EAD240050A60C /* DetectedInsectDetail */,
 				8BA185CC2C6EA5BF0050A60C /* DetectedInsectItem */,
 				8BA185BA2C6BCC700050A60C /* DetectInsect */,
@@ -248,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1393452BCAECAF00D33733 /* Assets.xcassets */,
+				8BF7B1B12CD2A959007B0180 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -255,6 +265,7 @@
 		8BA185C72C6E87DA0050A60C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8BF7B1B32CD2AFE9007B0180 /* Insect.swift */,
 				8BA185C82C6E881D0050A60C /* DetectedInsect.swift */,
 			);
 			name = Models;
@@ -272,7 +283,7 @@
 		8BA185D32C6EAD240050A60C /* DetectedInsectDetail */ = {
 			isa = PBXGroup;
 			children = (
-				8BA185D12C6EAD090050A60C /* DetectedInsectDetailViewModel.swift */,
+				8BA185D12C6EAD090050A60C /* DetectedInsectDetailDataModel.swift */,
 				8BA185D42C6EAD350050A60C /* DetectedInsectDetailView.swift */,
 			);
 			path = DetectedInsectDetail;
@@ -298,6 +309,15 @@
 				8BA185C32C6E3CD60050A60C /* String+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8BF7B1B72CD2B396007B0180 /* LearnMore */ = {
+			isa = PBXGroup;
+			children = (
+				8BF7B1B82CD2B3E3007B0180 /* LearnMoreDataModel.swift */,
+				8BF7B1B52CD2B390007B0180 /* LearnMoreView.swift */,
+			);
+			path = LearnMore;
 			sourceTree = "<group>";
 		};
 		8BFA92E82BDE749A004D499A /* Navigation */ = {
@@ -413,11 +433,12 @@
 			};
 			buildConfigurationList = 8B1393392BCAECAE00D33733 /* Build configuration list for PBXProject "InsectsDetector" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = pl;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 8B1393352BCAECAE00D33733;
 			packageReferences = (
@@ -441,6 +462,7 @@
 			files = (
 				8B1393492BCAECAF00D33733 /* Preview Assets.xcassets in Resources */,
 				8B1393462BCAECAF00D33733 /* Assets.xcassets in Resources */,
+				8BF7B1B22CD2A959007B0180 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,15 +491,18 @@
 				8BCB27DC2BE3A51400C7E61C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				8BA185D52C6EAD350050A60C /* DetectedInsectDetailView.swift in Sources */,
 				8BA185C92C6E881D0050A60C /* DetectedInsect.swift in Sources */,
+				8BF7B1B92CD2B3EA007B0180 /* LearnMoreDataModel.swift in Sources */,
+				8BF7B1B42CD2AFED007B0180 /* Insect.swift in Sources */,
 				8B1393422BCAECAE00D33733 /* InsectsDetectorApp.swift in Sources */,
 				8BCB27DA2BE3A32000C7E61C /* HomeViewModel.swift in Sources */,
 				8BA185A22C63FCBF0050A60C /* ThumbnailView.swift in Sources */,
 				8BA185BC2C6BCC910050A60C /* DetectInsectView.swift in Sources */,
 				8B13936C2BCAECED00D33733 /* ImagePredictor.swift in Sources */,
 				8BFA92E72BDE72FF004D499A /* TabBar.swift in Sources */,
-				8BA185D22C6EAD090050A60C /* DetectedInsectDetailViewModel.swift in Sources */,
+				8BA185D22C6EAD090050A60C /* DetectedInsectDetailDataModel.swift in Sources */,
 				8BA185B92C6BC9BA0050A60C /* Image+Extension.swift in Sources */,
 				8BA185D02C6EA9C80050A60C /* DetectedInsectItemViewModel.swift in Sources */,
+				8BF7B1B62CD2B390007B0180 /* LearnMoreView.swift in Sources */,
 				8BCB27DE2BE3A54A00C7E61C /* Prediction.swift in Sources */,
 				8BA1859E2C63AEC20050A60C /* ScannerDataModel.swift in Sources */,
 				8BA185A92C6548810050A60C /* CameraManager.swift in Sources */,
@@ -506,7 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1393532BCAECAF00D33733 /* InsectsDetectorTests.swift in Sources */,
+				8B1393532BCAECAF00D33733 /* HomeDataModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +619,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -650,6 +676,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

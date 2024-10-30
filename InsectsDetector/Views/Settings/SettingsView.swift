@@ -31,7 +31,7 @@ struct SettingsView: View {
                     .tint(Color(uiColor: .tertiarySystemFill))
                     .frame(maxWidth: .infinity)
                     .listRowBackground(Color.clear)
-                    .alert("Reset Data", isPresented: $showAlert) {
+                    .alert("Reset data", isPresented: $showAlert) {
                         Button("Reset", role: .destructive) {
                             viewModel.clearUserDefaultsData()
                         }

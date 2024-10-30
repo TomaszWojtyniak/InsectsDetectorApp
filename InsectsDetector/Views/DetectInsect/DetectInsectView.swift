@@ -60,7 +60,7 @@ struct DetectInsectView: View {
                 self.dataModel.classifyImage(image: image)
             }
         }
-        .navigationTitle("Identify the insect")
+        .navigationTitle("Insect detected")
         .navigationBarTitleDisplayMode(.large)
     }
 }
