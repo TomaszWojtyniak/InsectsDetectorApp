@@ -1,12 +1,32 @@
 {
   "sourceLanguage" : "pl",
   "strings" : {
+    "Although not technically an insect, spiders are arachnids from the class Arachnida and play a crucial role in pest control. With eight legs and multiple eyes, spiders have evolved diverse methods of hunting, from weaving intricate webs to ambushing prey. Spiders produce silk, used for various purposes, including web construction, creating egg sacs, and catching prey. They are found in nearly every habitat on Earth and are important indicators of biodiversity and environmental health." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chociaż technicznie nie jest owadem, pająki należą do gromady pajęczaków (Arachnida) i odgrywają istotną rolę w kontroli szkodników. Posiadają osiem nóg i wiele oczu, a ich różnorodność metod polowania, od tkania misternych sieci po zasadzki, pozwala im efektywnie zdobywać pożywienie. Pająki produkują jedwab, który służy do budowy sieci, tworzenia kokonów jajowych i chwytania zdobyczy. Występują w niemal każdym siedlisku na Ziemi i są ważnymi wskaźnikami bioróżnorodności i zdrowia środowiska."
+          }
+        }
+      }
+    },
     "Ant" : {
       "localizations" : {
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mrówka"
+          }
+        }
+      }
+    },
+    "Ants are industrious and social insects that belong to the family Formicidae. They live in well-organized colonies or nests with hierarchies comprising worker ants, soldiers, drones, and a queen. Ant colonies vary in size, from a few dozen individuals to millions, and are known for their remarkable strength; an ant can lift up to 50 times its body weight. Ants communicate and coordinate through pheromones, allowing them to work collectively to find food, protect their nest, and care for their young. Found on nearly every continent, ants play essential roles in their ecosystems, such as aerating soil and controlling other insect populations." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mrówki są pracowitymi i społecznymi owadami należącymi do rodziny mrówkowatych (Formicidae). Żyją w dobrze zorganizowanych koloniach lub gniazdach, gdzie funkcjonują hierarchie składające się z robotnic, żołnierzy, trutni i królowej. Kolonie mrówek różnią się wielkością, od kilku tuzinów osobników do milionów, a są znane ze swojej niezwykłej siły – mrówka może unieść do 50 razy większy ciężar niż masa jej ciała. Mrówki komunikują się i koordynują działania za pomocą feromonów, co pozwala im współpracować przy poszukiwaniu jedzenia, ochronie gniazda i opiece nad młodymi. Występują na niemal wszystkich kontynentach i pełnią istotne role w ekosystemach, takie jak napowietrzanie gleby i kontrolowanie populacji innych owadów."
           }
         }
       }
@@ -21,12 +41,42 @@
         }
       }
     },
+    "Bees are vital pollinators from the Apoidea family, with over 20,000 species globally, including honeybees, bumblebees, and solitary bees. Known for their role in pollinating flowers and crops, bees contribute significantly to global food production. Honeybees, in particular, live in colonies led by a queen, with worker bees maintaining the hive, foraging for nectar, and protecting against threats. They produce honey and beeswax, prized for human use. Bees are currently facing threats due to habitat loss, pesticides, and climate change, highlighting their critical role in biodiversity and the environment." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pszczoły są kluczowymi zapylaczami z rodziny Apoidea, a na świecie istnieje ponad 20 000 gatunków, w tym pszczoły miodne, trzmiele i pszczoły samotnice. Są znane ze swojej roli w zapylaniu kwiatów i upraw, co przyczynia się znacząco do globalnej produkcji żywności. Pszczoły miodne żyją w koloniach kierowanych przez królową, podczas gdy robotnice utrzymują ul, zbierają nektar i chronią przed zagrożeniami. Wytwarzają miód i wosk pszczeli, cenione przez człowieka. Obecnie pszczoły są zagrożone z powodu utraty siedlisk, pestycydów i zmian klimatycznych, co podkreśla ich znaczenie dla bioróżnorodności i środowiska."
+          }
+        }
+      }
+    },
     "Bumblebee" : {
       "localizations" : {
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trzmiel"
+          }
+        }
+      }
+    },
+    "Bumblebees are large, furry bees known for their gentle nature and exceptional pollinating skills. Found primarily in cooler climates, they have robust, hairy bodies that make them highly efficient at pollinating certain plants, including tomatoes and peppers, through a process called “buzz pollination.” Bumblebee colonies are smaller than honeybee hives, with a single queen and fewer workers. They nest underground or in sheltered areas and, unlike honeybees, can sting multiple times if threatened. Bumblebees are critical for maintaining biodiversity and crop yields." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trzmiele to duże, futrzaste pszczoły znane ze swojego łagodnego charakteru i wyjątkowych umiejętności zapylania. Występują głównie w chłodniejszych klimatach, a ich mocne, owłosione ciała sprawiają, że są bardzo skuteczne w zapylaniu niektórych roślin, w tym pomidorów i papryki, poprzez proces zwany „zapylaniem wibracyjnym”. Kolonie trzmieli są mniejsze niż u pszczół miodnych i mają jedną królową oraz mniej robotnic. Gniazdują pod ziemią lub w osłoniętych miejscach, a w przeciwieństwie do pszczół miodnych mogą żądlić wielokrotnie. Trzmiele są kluczowe dla zachowania bioróżnorodności i plonów roślinnych."
+          }
+        }
+      }
+    },
+    "Butterflies belong to the order Lepidoptera, known for their colorful wings and graceful flight. They undergo a complete metamorphosis: from egg to caterpillar (larva), then to a chrysalis (pupa), and finally to an adult butterfly. Butterflies play an essential role in pollinating plants, particularly flowering plants, and serve as indicators of healthy ecosystems. With over 17,500 species, butterflies vary widely in color, size, and behavior. They are sensitive to environmental changes, and some species migrate vast distances, such as the famous monarch butterfly." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motyle należą do rzędu łuskoskrzydłych (Lepidoptera) i są znane ze swoich kolorowych skrzydeł oraz gracji lotu. Przechodzą pełną metamorfozę: od jaja przez gąsienicę (larwę), poczwarkę (chryzalidę), aż po dorosłego motyla. Motyle odgrywają ważną rolę w zapylaniu roślin, zwłaszcza kwiatowych, i są wskaźnikami zdrowych ekosystemów. Przy ponad 17 500 gatunków motyle różnią się pod względem koloru, wielkości i zachowania. Są wrażliwe na zmiany środowiskowe, a niektóre gatunki, jak słynny monarcha, migrują na duże odległości."
           }
         }
       }
@@ -71,6 +121,26 @@
         }
       }
     },
+    "Cockroaches are resilient insects from the order Blattodea, with a history dating back over 300 million years. They are adaptable and can survive in diverse and extreme conditions, even going without food for weeks. Though often viewed as pests, cockroaches are important scavengers, breaking down decaying organic matter. They have a high reproductive rate and are highly resistant to radiation. While some species infest human habitats, many live outdoors and play a role in nutrient cycling in ecosystems." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karaluchy to wytrzymałe owady z rzędu karaczanów (Blattodea), których historia sięga ponad 300 milionów lat. Są odporne i mogą przetrwać w różnych warunkach, nawet bez jedzenia przez kilka tygodni. Choć często postrzegane jako szkodniki, karaluchy są ważnymi padlinożercami, rozkładającymi materię organiczną. Mają wysokie tempo rozmnażania i są bardzo odporne na promieniowanie. Choć niektóre gatunki zasiedlają ludzkie siedliska, wiele żyje na wolności i odgrywa rolę w obiegu składników odżywczych w ekosystemach."
+          }
+        }
+      }
+    },
+    "Flies, belonging to the order Diptera, are known for their quick reflexes and ability to adapt to diverse environments. Their lifecycle progresses from egg to larva (maggot) to pupa and then adult, with some species reproducing in just a few days. Flies are often seen as pests, especially house flies, which can spread diseases. However, they play crucial ecological roles by aiding decomposition, serving as food for various animals, and even pollinating plants. Certain species, such as hoverflies, mimic bees and are highly beneficial as pest controllers." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muchy, należące do rzędu muchówek (Diptera), są znane z szybkich refleksów i zdolności przystosowania się do różnych środowisk. Ich cykl życiowy obejmuje jajo, larwę (czerw) i poczwarkę, a następnie postać dorosłą, przy czym niektóre gatunki rozmnażają się w ciągu kilku dni. Muchy są często postrzegane jako szkodniki, zwłaszcza muchy domowe, które mogą przenosić choroby. Jednak pełnią kluczowe role ekologiczne, pomagając w rozkładzie, stanowiąc pokarm dla wielu zwierząt, a nawet zapylając rośliny. Niektóre gatunki, jak bzygi, naśladują pszczoły i są bardzo korzystne jako kontrolerzy szkodników."
+          }
+        }
+      }
+    },
     "Fly" : {
       "localizations" : {
         "pl" : {
@@ -87,6 +157,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Strojnica włoska"
+          }
+        }
+      }
+    },
+    "Graphosoma, also known as the Italian striped bug or shield bug, belongs to the Pentatomidae family. With their distinctive red and black stripes, these bugs are easily recognizable. They feed on plants, primarily of the carrot family, and emit a characteristic odor when disturbed as a defense mechanism. Their colors are a form of aposematism, signaling to potential predators that they might taste unpleasant." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Strojnica włoska, znana również jako pluskwiak pasiasty lub tarczyca pasiasta, należy do rodziny tarczówkowatych (Pentatomidae). Te łatwo rozpoznawalne owady mają charakterystyczne czerwono-czarne paski. Żywią się roślinami, głównie z rodziny selerowatych, a gdy są zaniepokojone, wydzielają charakterystyczny zapach w ramach mechanizmu obronnego. Ich kolory to forma aposematyzmu, sygnalizująca potencjalnym drapieżnikom, że mogą być niesmaczne."
           }
         }
       }
@@ -121,6 +201,16 @@
         }
       }
     },
+    "Ladybugs, or ladybirds, belong to the Coccinellidae family and are small beetles recognized by their bright red or yellow bodies adorned with black spots. Known as beneficial insects in agriculture, ladybugs are natural predators of aphids and other pests, helping protect crops and gardens. Some species, however, have adapted to different climates and become invasive. Ladybugs are symbols of good luck in many cultures, and their vibrant coloration acts as a warning to predators about their unappetizing taste and mild toxicity." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biedronki, zwane także bożymi krówkami, należą do rodziny biedronkowatych (Coccinellidae) i są małymi chrząszczami, rozpoznawalnymi po jaskrawoczerwonych lub żółtych ciałach z czarnymi plamkami. Znane jako pożyteczne owady w rolnictwie, biedronki są naturalnymi drapieżnikami mszyc i innych szkodników, pomagając chronić uprawy i ogrody. Niektóre gatunki przystosowały się do różnych klimatów i stały się inwazyjne. Biedronki są symbolami szczęścia w wielu kulturach, a ich jaskrawe ubarwienie ostrzega drapieżniki przed ich nieprzyjemnym smakiem i łagodną toksycznością."
+          }
+        }
+      }
+    },
     "Learn More" : {
       "localizations" : {
         "pl" : {
@@ -141,6 +231,16 @@
         }
       }
     },
+    "Mantises, from the order Mantodea, are fascinating predatory insects characterized by their upright stance and folded, grasping front legs, which give them a “praying” appearance. Known for their patience and speed, they lie in wait for unsuspecting prey and strike with lightning-fast reflexes. Mantises use camouflage to blend into their surroundings and are excellent at controlling pest populations. Females sometimes exhibit sexual cannibalism, consuming their mates after reproduction." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modliszki, należące do rzędu modliszkowatych (Mantodea), są fascynującymi drapieżnymi owadami charakteryzującymi się wyprostowaną postawą i złożonymi przednimi odnóżami, które nadają im „modlitewny” wygląd. Znane są z cierpliwości i szybkości, czekając na niczego nieświadomą ofiarę i atakując z błyskawiczną prędkością. Modliszki wykorzystują kamuflaż, by wtopić się w otoczenie i są doskonałe w kontrolowaniu populacji szkodników. Samice czasami wykazują kanibalizm płciowy, zjadając partnerów po kopulacji."
+          }
+        }
+      }
+    },
     "Mosquito" : {
       "localizations" : {
         "pl" : {
@@ -151,12 +251,32 @@
         }
       }
     },
+    "Mosquitoes are small flying insects belonging to the Culicidae family and are notorious for their blood-feeding behavior. Only female mosquitoes bite, as they need protein from blood to produce eggs. They are vectors for diseases such as malaria, dengue fever, and West Nile virus, making them one of the most dangerous insects to humans. Despite their reputation, mosquitoes serve as food for various species, such as birds and bats, and their larvae help recycle nutrients in aquatic ecosystems." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komary to małe, latające owady należące do rodziny komarowatych (Culicidae) i są znane z żywienia się krwią. Tylko samice komarów gryzą, ponieważ potrzebują białka z krwi do produkcji jaj. Są wektorami chorób, takich jak malaria, denga i wirus Zachodniego Nilu, co czyni je jednym z najbardziej niebezpiecznych owadów dla człowieka. Pomimo swojej reputacji, komary są pożywieniem dla różnych gatunków, takich jak ptaki i nietoperze, a ich larwy pomagają w recyklingu składników odżywczych w ekosystemach wodnych."
+          }
+        }
+      }
+    },
     "Moth" : {
       "localizations" : {
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ćma"
+          }
+        }
+      }
+    },
+    "Moths are close relatives of butterflies and also belong to the order Lepidoptera. While butterflies are often associated with the daytime, most moths are nocturnal, using the moon and stars for navigation. They range in size from tiny to large and are crucial in their ecosystems as pollinators and a food source for many animals. Moths are attracted to light, a behavior known as phototaxis, and their muted colors allow them to blend into their surroundings as camouflage. Some moths, like the hawk moth, can mimic their predators or appear larger to avoid attacks." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ćmy są blisko spokrewnione z motylami i również należą do rzędu łuskoskrzydłych (Lepidoptera). Podczas gdy motyle kojarzą się z dniem, większość ciem jest nocna i używa księżyca i gwiazd do nawigacji. Różnią się wielkością od bardzo małych po duże i pełnią ważne role w ekosystemach jako zapylacze i pożywienie dla wielu zwierząt. Ćmy przyciąga światło, co nazywa się fototaksją, a ich stonowane kolory pomagają im kamuflować się w otoczeniu. Niektóre ćmy, jak zawisak, potrafią imitować swoich drapieżników lub wyglądać na większe, by unikać ataków."
           }
         }
       }
@@ -187,6 +307,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zresetuj dane"
+          }
+        }
+      }
+    },
+    "Scorpionflies belong to the order Mecoptera and are named for the males’ scorpion-like tail, which is actually harmless and used in courtship displays. These insects are known for their elongated, beak-like mouths, which they use to feed on dead insects, decaying organic matter, and sometimes nectar. Scorpionflies are often found in humid environments and play a role in the decomposition process, acting as recyclers in ecosystems." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wojsiłki należą do rzędu wojsiłkowatych (Mecoptera) i zawdzięczają swoją nazwę ogonom samców przypominającemu skorpiona, który w rzeczywistości jest nieszkodliwy i używany w pokazach godowych. Te owady są znane ze swoich wydłużonych, przypominających dziób ust, które służą im do żerowania na martwych owadach, gnijącej materii organicznej, a czasem nektarze. Wojsiłki często występują w wilgotnych środowiskach i pełnią rolę w procesie rozkładu, działając jako „recyklerzy” w ekosystemach."
           }
         }
       }
@@ -257,6 +387,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Osa"
+          }
+        }
+      }
+    },
+    "Wasps are a diverse group of insects from the order Hymenoptera, which includes both solitary and social species. Known for their smooth bodies and narrow waists, wasps come in vibrant colors that often warn predators of their sting. Social wasps, like yellow jackets and hornets, build nests and work together, while solitary wasps, such as mud daubers, build individual nests. Wasps play a dual ecological role by acting as both predators, controlling pest populations, and pollinators. Despite their reputation, wasps are crucial for maintaining balanced ecosystems." : {
+      "localizations" : {
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Osy to różnorodna grupa owadów z rzędu błonkoskrzydłych, obejmująca zarówno gatunki samotne, jak i społeczne. Wyróżniają się gładkimi ciałami i wąskimi taliami, a ich jaskrawe kolory często ostrzegają drapieżniki przed ich żądłem. Społeczne osy, takie jak szerszenie i żółtaczki, budują gniazda i współpracują, podczas gdy samotne osy, jak gliniarze, budują indywidualne gniazda. Osy pełnią podwójną rolę ekologiczną jako drapieżniki, kontrolując populacje szkodników, oraz zapylacze. Pomimo ich reputacji, osy są kluczowe dla zachowania równowagi w ekosystemach."
           }
         }
       }
