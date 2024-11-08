@@ -63,4 +63,12 @@ struct DetectedInsect: Codable, Hashable {
         
         return UIImage(data: imageData) ?? UIImage()
     }
+    
+    static func fromDictionary(_ dictionary: [String: Any]) -> DetectedInsect? {
+        guard let prediction = dictionary["predictions"] as? String else {
+            return nil
+        }
+        
+        return DetectedInsect(date: Date(), image: UIImage(named: "ant")!, prediction: prediction)
+    }
 }

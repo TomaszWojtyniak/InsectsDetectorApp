@@ -70,7 +70,7 @@ class ImagePredictor {
         try handler.perform(requests)
     }
     
-    private func visionRequestHandler(_ request: VNRequest, error: Error?) {
+    func visionRequestHandler(_ request: VNRequest, error: Error?) {
         // Remove the caller's handler from the dictionary and keep a reference to it.
         guard let predictionHandler = predictionHandlers.removeValue(forKey: request) else {
             fatalError("Every request must have a prediction handler.")

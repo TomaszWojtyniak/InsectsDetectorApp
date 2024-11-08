@@ -12,7 +12,7 @@ import UIKit
 
 class CameraManager: NSObject {
     
-    private let captureSession = AVCaptureSession()
+    let captureSession = AVCaptureSession()
     private var deviceInput: AVCaptureDeviceInput?
     private var videoOutput: AVCaptureVideoDataOutput?
     private var photoOutput: AVCapturePhotoOutput?

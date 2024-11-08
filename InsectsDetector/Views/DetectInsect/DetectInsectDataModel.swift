@@ -10,7 +10,7 @@ import SwiftUI
 @Observable
 class DetectInsectDataModel {
     
-    let imagePredictor = ImagePredictor()
+    var imagePredictor = ImagePredictor()
     
     let predictionsToShow = 5
     

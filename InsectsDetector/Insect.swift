@@ -25,7 +25,7 @@ enum Insect: String, CaseIterable {
     
     static func matchInsect(insectName: String) -> Insect? {
         for insect in Insect.allCases {
-            if insectName == insect.name {
+            if insectName.lowercased() == insect.rawValue.lowercased() ||  insectName.lowercased() == insect.name.lowercased() {
                 return insect
             }
         }

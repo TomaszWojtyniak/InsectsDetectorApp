@@ -10,7 +10,7 @@ import PhotosUI
 import os.log
 
 @Observable
-final class ScannerDataModel {
+class ScannerDataModel {
     
     let cameraManager = CameraManager()
     
